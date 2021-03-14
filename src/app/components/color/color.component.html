@@ -1,1 +1,14 @@
-<p>color works!</p>
+
+<div *ngIf="dataLoaded==false" class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+
+<thead>
+    <tr>
+        <th>Araba Renkleri</th>
+    </tr>
+</thead>
+<ul class="list-group">
+
+    <li *ngFor="let color of colors" class="list-group-item">{{color.colorName}}</li>    
+</ul>

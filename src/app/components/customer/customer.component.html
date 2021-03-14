@@ -1,1 +1,14 @@
-<p>customer works!</p>
+<div *ngIf="dataLoaded==false" class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+</div>
+
+<thead>
+    <tr>
+        <th>Kayıtlı Müşteriler</th>
+    </tr>
+</thead>
+
+<ul class="list-group">
+    
+    <li *ngFor="let customer of customers" class="list-group-item">{{customer.companyName}}</li>    
+</ul>
