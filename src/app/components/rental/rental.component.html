@@ -6,17 +6,18 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Araç ID</th>
-            <th>Müşteri ID</th>
+            <th>Araç</th>
+            <th>Müşteri</th>
             <th>Kiralama Tarihi</th>
             <th>Teslim Tarihi</th>            
         </tr>
     </thead>
     <tr *ngFor="let rental of rentals">
         <td>{{rental.id}}</td>
-        <td>{{rental.carId}}</td>
-        <td>{{rental.customerId}}</td>
+        <td>{{rental.carName}}</td>
+        <td>{{rental.userName}}</td>
         <td>{{rental.rentDate}}</td>
         <td>{{rental.returnDate}}</td>        
     </tr>
 </table>
+
